@@ -5,6 +5,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Melih Odabaş</Authors>
     <Version>1.0.0</Version>
+    <Description>Custom INpgsqlLoggingProvider implementation that utilizes Microsoft.Extensions.Logging.ILogger underneath.</Description>
   </PropertyGroup>
 
   <ItemGroup>
