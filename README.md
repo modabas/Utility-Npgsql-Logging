@@ -1,6 +1,6 @@
 # INpgsqlLoggingProvider implementation with Microsoft.Extensions.Logging.ILogger
 
-This repository contains custom [INpgsqlLoggingProvider](https://www.npgsql.org/doc/logging.html) implementation that utilizes Microsoft.Extensions.Logging.ILogger underneath. Npgsql log messages are written to all log providers added, obeying standart Microsoft.Extensions.Logging configuration rules.
+This repository contains custom [INpgsqlLoggingProvider](https://www.npgsql.org/doc/diagnostics/logging.html) implementation that utilizes Microsoft.Extensions.Logging.ILogger underneath. Npgsql log messages are written to all log providers added, obeying standart Microsoft.Extensions.Logging configuration rules.
 
 ## Setup
 
@@ -45,7 +45,7 @@ Then enable Npgsql logging on application level, set Npgsql static parameters at
 
 The configuration is setup in the Logging section of the configuraton json file.
 Use `Npgsql` category under `Logging` block to configure log level for all Npgsql logs.
-For information on LogLevel configuration, check [Logging in .NET Core and ASP.NET Core documentation](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-5.0).
+For information on LogLevel configuration, check [Logging in .NET Core and ASP.NET Core documentation](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-6.0).
 
 ```json
   "Logging": {
